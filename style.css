@@ -4,38 +4,102 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     background-color: #FFFFFF;
     font-family: "roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    min-width: 900px;
 }
 
 ul {
     list-style-type: none;
 }
 
-button {
-    background-color: #3882F6;
-    border-radius: 10px;
-    flex: 0;
+.header {
+    background-color: #1F2937;
+    color: #FFFFFF;
+    height: 40px;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
-.header,
-.hero,
-.info,
-.quote,
-.ad,
-.footer {
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+} 
+
+.links {
+    font-size: 18px;
+    color: #E5E7EB;
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
+    gap: 10px;
+}
+
+.hero {
+    background-color: #1F2937;
+    color: #FFFFFF;
+    height: 100px;
+    padding: 175px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .text {
+    font-size: 18px;
+    color: #E5E7EB;
+    
+    flex: 0 0 500px;
+}
+
+.text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin-bottom: 10px;
+}
+
+.text button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 75px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.img {
+    background-color: gray;
+    flex: 0 0 300px;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    color: #1F2937;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .square {
@@ -47,99 +111,79 @@ button {
     border-radius: 10px;
 }
 
-.header,
-.hero,
-.footer {
-    background-color: #1F2937;
-    color: #FFFFFF;
+.card {
+    width: 100px;
 }
 
-.header,
-.footer {
-    height: 10%;
-}
-
-.hero,
-.info,
-.quote,
-.ad {
-    height: 20%;
-}
-
-.links,
-.text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.text h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-}
-
-.header {
-    justify-content: space-between;
-}
-
-.links {
-    display: flex;
-    gap: 10px;
-}
-
-.hero {
-    justify-content: space-between;
-    
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.img {
-}
-
-.info {
-    color: #1F2937;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cards {
-    display: flex;
+.card p {
+    text-align: center;
 }
 
 .quote {
     background-color: #E5E7EB;
+    padding: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.quote .text {
+.quote em {
     font-size: 36px;
-    color: #1F2937
+    color: #1F2937;
+    flex: 1 1 600px;
 }
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
-} 
 
-.ad {
+.quote h4 {
+    color: #1F2937;
+    text-align: end;
+}
+
+
+.ad {  
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.ad .text {
     background-color:#3882F6;
     border-radius: 10px;
-    margin: 100px;
-    justify-content: space-between;    
+    font-size: 18px;
+    color: #E5E7EB;
+    width: 750px;
+    padding: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 125px;
+    margin-right: 125px;
+    flex: 0 0 auto;
 }
 
 .ad button {
-    align-self: end;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 75px;
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 5px;;
+    margin-left: 25px;
+    
 }
 
 .footer {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.footer p {
+    background-color: #1F2937;
+    padding: 40px;
+    text-align: center;
 }
